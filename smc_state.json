@@ -3,28 +3,49 @@
     "last_bull_idm_idx": null,
     "last_bear_idm_idx": null,
     "last_flip_alerts": [],
-    "last_hi_sweep_idx": 261,
-    "last_lo_sweep_idx": 132
+    "last_hi_sweep_idx": 367,
+    "last_lo_sweep_idx": 54
   },
   "ETH/USDT": {
     "last_bull_idm_idx": null,
     "last_bear_idm_idx": null,
     "last_flip_alerts": [],
-    "last_hi_sweep_idx": 271,
-    "last_lo_sweep_idx": 134
+    "last_hi_sweep_idx": 431,
+    "last_lo_sweep_idx": 54
   },
   "SOL/USDT": {
     "last_bull_idm_idx": null,
     "last_bear_idm_idx": null,
     "last_flip_alerts": [],
-    "last_hi_sweep_idx": 54,
-    "last_lo_sweep_idx": 132
+    "last_hi_sweep_idx": 557,
+    "last_lo_sweep_idx": 54
   },
   "SUI/USDT": {
     "last_bull_idm_idx": null,
     "last_bear_idm_idx": null,
     "last_flip_alerts": [],
-    "last_hi_sweep_idx": 141,
-    "last_lo_sweep_idx": 15
+    "last_hi_sweep_idx": 265,
+    "last_lo_sweep_idx": 59
+  },
+  "DOGE/USDT": {
+    "last_bull_idm_idx": null,
+    "last_bear_idm_idx": null,
+    "last_flip_alerts": [],
+    "last_hi_sweep_idx": 550,
+    "last_lo_sweep_idx": 54
+  },
+  "XRP/USDT": {
+    "last_bull_idm_idx": null,
+    "last_bear_idm_idx": null,
+    "last_flip_alerts": [],
+    "last_hi_sweep_idx": 233,
+    "last_lo_sweep_idx": 54
+  },
+  "DOT/USDT": {
+    "last_bull_idm_idx": null,
+    "last_bear_idm_idx": null,
+    "last_flip_alerts": [],
+    "last_hi_sweep_idx": 226,
+    "last_lo_sweep_idx": 54
   }
 }
