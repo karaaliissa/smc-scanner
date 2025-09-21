@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 from telegram import Bot
 
 # ---------------- CONFIG YOU MAY TWEAK ----------------
-WATCHLIST = ["BTC/USDT", "ETH/USDT", "SOL/USDT", "SUI/USDT"]
+WATCHLIST = ["BTC/USDT", "ETH/USDT", "SOL/USDT", "SUI/USDT" , "DOGE/USDT" , "XRP/USDT" , "DOT/USDT"]
 
 EXCHANGE_ID = "okx"           # local default; workflow may override via EXCHANGE_ID
 TIMEFRAME = "4h"

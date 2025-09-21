@@ -2,8 +2,8 @@ name: Run SMC Scanner (daily)
 
 on:
   schedule:
-    - cron: '5 0 * * *'     # 00:05 UTC daily
-  workflow_dispatch:         # allow manual run
+    - cron: '5 */4 * * *'   # every 4 hours at minute 05 UTC
+  workflow_dispatch:
 
 permissions:
   contents: write            # allow pushing smc_state.json
@@ -34,11 +34,11 @@ jobs:
 
       - name: Run SMC scanner
         env:
+          EXCHANGE_ID: binanceus          # prefer binanceus on GitHub runners
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          BINANCE_API_KEY: ${{ secrets.BINANCE_API_KEY }}
-          BINANCE_API_SECRET: ${{ secrets.BINANCE_API_SECRET }}
         run: python smc_scanner.py
+
 
       - name: Configure git for pushing state
         run: |
