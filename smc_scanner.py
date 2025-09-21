@@ -56,14 +56,21 @@ def save_state(st: Dict):
     os.replace(tmp, ALERT_STATE_FILE)
 
 def init_exchange():
+    # Avoid Binance SAPI (restricted) call for currencies
     ex = getattr(ccxt, EXCHANGE_ID)({
         "enableRateLimit": True,
-        "options": {"defaultType": "spot"},
+        "options": {
+            "defaultType": "spot",
+            "fetchCurrencies": False,   # <- critical: do NOT hit SAPI/capital
+        },
         "apiKey": os.getenv("BINANCE_API_KEY") or None,
         "secret": os.getenv("BINANCE_API_SECRET") or None,
     })
-    ex.load_markets()
+    # Make sure load_markets doesn't try to fetch currencies
+    ex.options["fetchCurrencies"] = False
+    ex.load_markets(params={"fetchCurrencies": False})
     return ex
+
 
 def filter_by_volume(ex, symbols: List[str]) -> List[str]:
     try:
