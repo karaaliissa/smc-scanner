@@ -1,0 +1,30 @@
+{
+  "BTC/USDT": {
+    "last_bull_idm_idx": null,
+    "last_bear_idm_idx": null,
+    "last_flip_alerts": [],
+    "last_hi_sweep_idx": 361,
+    "last_lo_sweep_idx": 21
+  },
+  "ETH/USDT": {
+    "last_bull_idm_idx": null,
+    "last_bear_idm_idx": null,
+    "last_flip_alerts": [],
+    "last_hi_sweep_idx": 371,
+    "last_lo_sweep_idx": 234
+  },
+  "SOL/USDT": {
+    "last_bull_idm_idx": null,
+    "last_bear_idm_idx": null,
+    "last_flip_alerts": [],
+    "last_hi_sweep_idx": 154,
+    "last_lo_sweep_idx": 232
+  },
+  "SUI/USDT": {
+    "last_bull_idm_idx": null,
+    "last_bear_idm_idx": null,
+    "last_flip_alerts": [],
+    "last_hi_sweep_idx": 141,
+    "last_lo_sweep_idx": 15
+  }
+}
