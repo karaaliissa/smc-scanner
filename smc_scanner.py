@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 from telegram import Bot
 
 # ------------- GLOBAL CONFIG -------------
-EXCHANGE_ID = "binanceus"
+EXCHANGE_ID = "binance"
 TIMEFRAME = "1d"
 CANDLES_LIMIT = 400
 ALERT_STATE_FILE = "smc_state.json"  # prevents duplicate alerts
@@ -56,20 +56,29 @@ def save_state(st: Dict):
     os.replace(tmp, ALERT_STATE_FILE)
 
 def init_exchange():
-    # Avoid Binance SAPI (restricted) call for currencies
-    ex = getattr(ccxt, EXCHANGE_ID)({
-        "enableRateLimit": True,
-        "options": {
-            "defaultType": "spot",
-            "fetchCurrencies": False,   # <- critical: do NOT hit SAPI/capital
-        },
-        "apiKey": os.getenv("BINANCE_API_KEY") or None,
-        "secret": os.getenv("BINANCE_API_SECRET") or None,
-    })
-    # Make sure load_markets doesn't try to fetch currencies
-    ex.options["fetchCurrencies"] = False
-    ex.load_markets(params={"fetchCurrencies": False})
-    return ex
+    # try preferred exchange first, then fall back to binanceus if blocked (451)
+    candidates = [os.getenv("EXCHANGE_ID") or EXCHANGE_ID, "binanceus"]
+    for exch_id in candidates:
+        try:
+            ex = getattr(ccxt, exch_id)({
+                "enableRateLimit": True,
+                "options": {"defaultType": "spot"},
+                "apiKey": os.getenv("BINANCE_API_KEY") or None,
+                "secret": os.getenv("BINANCE_API_SECRET") or None,
+            })
+            # for binance(.com) avoid restricted SAPI currencies call
+            if exch_id == "binance":
+                ex.options["fetchCurrencies"] = False
+                ex.load_markets(params={"fetchCurrencies": False})
+            else:
+                ex.load_markets()
+            print(f"Using exchange: {exch_id}")
+            return ex
+        except Exception as e:
+            print(f"Init failed for {exch_id}: {e}")
+            continue
+    raise RuntimeError("All exchanges failed to initialize")
+
 
 
 def filter_by_volume(ex, symbols: List[str]) -> List[str]:
