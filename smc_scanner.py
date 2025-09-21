@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 from telegram import Bot
 
 # ------------- GLOBAL CONFIG -------------
-EXCHANGE_ID = "binance"
+EXCHANGE_ID = "binanceus"
 TIMEFRAME = "1d"
 CANDLES_LIMIT = 400
 ALERT_STATE_FILE = "smc_state.json"  # prevents duplicate alerts
