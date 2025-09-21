@@ -56,22 +56,17 @@ def save_state(st: Dict):
     os.replace(tmp, ALERT_STATE_FILE)
 
 def init_exchange():
-    # try preferred exchange first, then fall back to binanceus if blocked (451)
-    candidates = [os.getenv("EXCHANGE_ID") or EXCHANGE_ID, "binanceus"]
-    for exch_id in candidates:
+    # try preferred exchange first (env or global), then fall back to binanceus, then okx
+    preferred = os.getenv("EXCHANGE_ID") or EXCHANGE_ID
+    for exch_id in [preferred, "binanceus", "okx"]:
         try:
             ex = getattr(ccxt, exch_id)({
                 "enableRateLimit": True,
-                "options": {"defaultType": "spot"},
-                "apiKey": os.getenv("BINANCE_API_KEY") or None,
-                "secret": os.getenv("BINANCE_API_SECRET") or None,
+                "options": {"defaultType": "spot", "fetchCurrencies": False},
+                # IMPORTANT: do NOT pass apiKey/secret – we only use public endpoints
             })
-            # for binance(.com) avoid restricted SAPI currencies call
-            if exch_id == "binance":
-                ex.options["fetchCurrencies"] = False
-                ex.load_markets(params={"fetchCurrencies": False})
-            else:
-                ex.load_markets()
+            params = {"fetchCurrencies": False} if exch_id.startswith("binance") else {}
+            ex.load_markets(params=params)
             print(f"Using exchange: {exch_id}")
             return ex
         except Exception as e:
