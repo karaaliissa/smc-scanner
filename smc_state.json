@@ -5,8 +5,8 @@
     "last_flip_alerts": [
       "BTC/USDT \u2022 Flip confirmed: demand\u2192supply (close below 115487.16)."
     ],
-    "last_hi_sweep_idx": 355,
-    "last_lo_sweep_idx": 42
+    "last_hi_sweep_idx": 354,
+    "last_lo_sweep_idx": 41
   },
   "ETH/USDT": {
     "last_bull_idm_idx": null,
@@ -14,8 +14,8 @@
     "last_flip_alerts": [
       "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 4465.46)."
     ],
-    "last_hi_sweep_idx": 419,
-    "last_lo_sweep_idx": 42
+    "last_hi_sweep_idx": 418,
+    "last_lo_sweep_idx": 41
   },
   "SOL/USDT": {
     "last_bull_idm_idx": null,
@@ -23,15 +23,15 @@
     "last_flip_alerts": [
       "SOL/USDT \u2022 Flip confirmed: demand\u2192supply (close below 236.35)."
     ],
-    "last_hi_sweep_idx": 545,
-    "last_lo_sweep_idx": 42
+    "last_hi_sweep_idx": 544,
+    "last_lo_sweep_idx": 41
   },
   "SUI/USDT": {
     "last_bull_idm_idx": null,
     "last_bear_idm_idx": null,
     "last_flip_alerts": [],
-    "last_hi_sweep_idx": 253,
-    "last_lo_sweep_idx": 47
+    "last_hi_sweep_idx": 252,
+    "last_lo_sweep_idx": 46
   },
   "DOGE/USDT": {
     "last_bull_idm_idx": null,
@@ -39,8 +39,8 @@
     "last_flip_alerts": [
       "DOGE/USDT \u2022 Flip confirmed: demand\u2192supply (close below 0.265840)."
     ],
-    "last_hi_sweep_idx": 538,
-    "last_lo_sweep_idx": 42
+    "last_hi_sweep_idx": 537,
+    "last_lo_sweep_idx": 41
   },
   "XRP/USDT": {
     "last_bull_idm_idx": null,
@@ -48,8 +48,8 @@
     "last_flip_alerts": [
       "XRP/USDT \u2022 Flip confirmed: demand\u2192supply (close below 2.955)."
     ],
-    "last_hi_sweep_idx": 221,
-    "last_lo_sweep_idx": 42
+    "last_hi_sweep_idx": 220,
+    "last_lo_sweep_idx": 41
   },
   "DOT/USDT": {
     "last_bull_idm_idx": null,
@@ -57,7 +57,7 @@
     "last_flip_alerts": [
       "DOT/USDT \u2022 Flip confirmed: demand\u2192supply (close below 4.245)."
     ],
-    "last_hi_sweep_idx": 214,
-    "last_lo_sweep_idx": 42
+    "last_hi_sweep_idx": 213,
+    "last_lo_sweep_idx": 41
   }
 }
