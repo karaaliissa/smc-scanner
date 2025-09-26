@@ -5,8 +5,8 @@
     "last_flip_alerts": [
       "BTC/USDT \u2022 Flip confirmed: demand\u2192supply (close below 115487.16)."
     ],
-    "last_hi_sweep_idx": 340,
-    "last_lo_sweep_idx": 27
+    "last_hi_sweep_idx": 339,
+    "last_lo_sweep_idx": 26
   },
   "ETH/USDT": {
     "last_bull_idm_idx": null,
@@ -16,8 +16,8 @@
       "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 4078.05).",
       "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 3931.57)."
     ],
-    "last_hi_sweep_idx": 404,
-    "last_lo_sweep_idx": 27
+    "last_hi_sweep_idx": 403,
+    "last_lo_sweep_idx": 26
   },
   "SOL/USDT": {
     "last_bull_idm_idx": null,
@@ -27,15 +27,15 @@
       "SOL/USDT \u2022 Flip confirmed: demand\u2192supply (close below 214.72).",
       "SOL/USDT \u2022 Flip confirmed: demand\u2192supply (close below 212.45)."
     ],
-    "last_hi_sweep_idx": 530,
-    "last_lo_sweep_idx": 27
+    "last_hi_sweep_idx": 529,
+    "last_lo_sweep_idx": 26
   },
   "SUI/USDT": {
     "last_bull_idm_idx": null,
     "last_bear_idm_idx": null,
     "last_flip_alerts": [],
-    "last_hi_sweep_idx": 238,
-    "last_lo_sweep_idx": 32
+    "last_hi_sweep_idx": 237,
+    "last_lo_sweep_idx": 31
   },
   "DOGE/USDT": {
     "last_bull_idm_idx": null,
@@ -44,8 +44,8 @@
       "DOGE/USDT \u2022 Flip confirmed: demand\u2192supply (close below 0.265840).",
       "DOGE/USDT \u2022 Flip confirmed: demand\u2192supply (close below 0.242880)."
     ],
-    "last_hi_sweep_idx": 523,
-    "last_lo_sweep_idx": 27
+    "last_hi_sweep_idx": 522,
+    "last_lo_sweep_idx": 26
   },
   "XRP/USDT": {
     "last_bull_idm_idx": null,
@@ -54,8 +54,8 @@
       "XRP/USDT \u2022 Flip confirmed: demand\u2192supply (close below 2.955).",
       "XRP/USDT \u2022 Flip confirmed: demand\u2192supply (close below 2.790)."
     ],
-    "last_hi_sweep_idx": 206,
-    "last_lo_sweep_idx": 27
+    "last_hi_sweep_idx": 205,
+    "last_lo_sweep_idx": 26
   },
   "DOT/USDT": {
     "last_bull_idm_idx": null,
@@ -63,7 +63,7 @@
     "last_flip_alerts": [
       "DOT/USDT \u2022 Flip confirmed: demand\u2192supply (close below 4.245)."
     ],
-    "last_hi_sweep_idx": 199,
-    "last_lo_sweep_idx": 27
+    "last_hi_sweep_idx": 198,
+    "last_lo_sweep_idx": 26
   }
 }
