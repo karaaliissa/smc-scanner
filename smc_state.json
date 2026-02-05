@@ -45,12 +45,12 @@
       "BTC/USDT \u2022 Flip confirmed: demand\u2192supply (close below 83680.40).",
       "BTC/USDT \u2022 Flip confirmed: demand\u2192supply (close below 83544.16)."
     ],
-    "last_hi_sweep_idx": 5,
-    "last_lo_sweep_idx": 598
+    "last_hi_sweep_idx": 4,
+    "last_lo_sweep_idx": 597
   },
   "ETH/USDT": {
     "last_bull_idm_idx": 596,
-    "last_bear_idm_idx": 592,
+    "last_bear_idm_idx": 593,
     "last_flip_alerts": [
       "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 4465.46).",
       "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 4078.05).",
@@ -90,14 +90,15 @@
       "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 2935.96).",
       "ETH/USDT \u2022 Flip confirmed: supply\u2192demand (close above 2933.05).",
       "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 2993.01).",
-      "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 2636.75)."
+      "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 2636.75).",
+      "ETH/USDT \u2022 Flip confirmed: demand\u2192supply (close below 2077.49)."
     ],
-    "last_hi_sweep_idx": 5,
-    "last_lo_sweep_idx": 598
+    "last_hi_sweep_idx": 4,
+    "last_lo_sweep_idx": 597
   },
   "SOL/USDT": {
     "last_bull_idm_idx": 591,
-    "last_bear_idm_idx": 596,
+    "last_bear_idm_idx": 593,
     "last_flip_alerts": [
       "SOL/USDT \u2022 Flip confirmed: demand\u2192supply (close below 236.35).",
       "SOL/USDT \u2022 Flip confirmed: demand\u2192supply (close below 214.72).",
@@ -127,14 +128,15 @@
       "SOL/USDT \u2022 Flip confirmed: demand\u2192supply (close below 141.86).",
       "SOL/USDT \u2022 Flip confirmed: demand\u2192supply (close below 133.24).",
       "SOL/USDT \u2022 Flip confirmed: demand\u2192supply (close below 126.03).",
-      "SOL/USDT \u2022 Flip confirmed: supply\u2192demand (close above 124.97)."
+      "SOL/USDT \u2022 Flip confirmed: supply\u2192demand (close above 124.97).",
+      "SOL/USDT \u2022 Flip confirmed: demand\u2192supply (close below 90.060)."
     ],
-    "last_hi_sweep_idx": 5,
-    "last_lo_sweep_idx": 598
+    "last_hi_sweep_idx": 4,
+    "last_lo_sweep_idx": 597
   },
   "SUI/USDT": {
     "last_bull_idm_idx": 590,
-    "last_bear_idm_idx": 594,
+    "last_bear_idm_idx": 593,
     "last_flip_alerts": [
       "SUI/USDT \u2022 Flip confirmed: supply\u2192demand (close above 3.152).",
       "SUI/USDT \u2022 Flip confirmed: supply\u2192demand (close above 3.276).",
@@ -169,8 +171,8 @@
       "SUI/USDT \u2022 Flip confirmed: demand\u2192supply (close below 1.239).",
       "SUI/USDT \u2022 Flip confirmed: demand\u2192supply (close below 1.055)."
     ],
-    "last_hi_sweep_idx": 7,
-    "last_lo_sweep_idx": 594
+    "last_hi_sweep_idx": 6,
+    "last_lo_sweep_idx": 593
   },
   "DOGE/USDT": {
     "last_bull_idm_idx": 596,
@@ -210,8 +212,8 @@
       "DOGE/USDT \u2022 Flip confirmed: supply\u2192demand (close above 0.122800).",
       "DOGE/USDT \u2022 Flip confirmed: demand\u2192supply (close below 0.113540)."
     ],
-    "last_hi_sweep_idx": 5,
-    "last_lo_sweep_idx": 579
+    "last_hi_sweep_idx": 4,
+    "last_lo_sweep_idx": 578
   },
   "XRP/USDT": {
     "last_bull_idm_idx": 593,
@@ -252,8 +254,8 @@
       "XRP/USDT \u2022 Flip confirmed: demand\u2192supply (close below 1.867).",
       "XRP/USDT \u2022 Flip confirmed: demand\u2192supply (close below 1.736)."
     ],
-    "last_hi_sweep_idx": 5,
-    "last_lo_sweep_idx": 595
+    "last_hi_sweep_idx": 4,
+    "last_lo_sweep_idx": 594
   },
   "DOT/USDT": {
     "last_bull_idm_idx": 593,
@@ -291,7 +293,7 @@
       "DOT/USDT \u2022 Flip confirmed: demand\u2192supply (close below 1.678).",
       "DOT/USDT \u2022 Flip confirmed: demand\u2192supply (close below 1.426)."
     ],
-    "last_hi_sweep_idx": 77,
-    "last_lo_sweep_idx": 594
+    "last_hi_sweep_idx": 76,
+    "last_lo_sweep_idx": 598
   }
 }
